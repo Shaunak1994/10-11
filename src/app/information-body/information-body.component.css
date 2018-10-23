@@ -1,0 +1,51 @@
+.div1{
+  width: 830px;
+  height: 215px;
+  padding: 20px;
+  margin-left: -50px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+}
+.container{
+  border-style: solid;
+  border-color: lightgrey;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  padding-top: 50px;
+  padding-right: 120px;
+  padding-bottom: -30px;
+  padding-left: 80px;
+  width: 100px;
+}
+
+
+.div2{
+  width: 1050px;
+  height: 350px;
+  padding: 50px;
+  margin-left: 35px;
+  border: 1px solid lightgrey;
+}
+.div3{
+  width: 390px;
+  height: 330px;
+  padding: 20px;
+  margin-right: 70px;
+  margin-left: -80px;
+  margin-top: 10px;
+  border: 2px solid lightgrey;
+}
+hr {
+  display: block;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  margin-left: 15px;
+  margin-right: 05px;
+  border-style: inset;
+  border-width: 2px;
+}
+#align{
+  align-items: center;
+}
+

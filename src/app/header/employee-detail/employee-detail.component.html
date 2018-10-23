@@ -1,0 +1,34 @@
+<div class="=row">
+  <button class="btn btn-primary ">Employee Details</button>
+  &nbsp;
+  <button class="btn2"> Employee Hierarchy </button>
+</div>
+<p>
+    <div class="row">
+      <div class="col-md-5" >
+        <table class="table table-hover table-bordered"  >
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let emp of empDetail">
+            <td>{{ emp.id }}</td>
+            <td>{{ emp.name }}</td>
+            <td> {{ emp.email }}</td>
+            <td> {{ emp.contact }}</td>
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+  </div>
+

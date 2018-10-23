@@ -1,0 +1,91 @@
+<div class="row">
+  <h3>Time Sheet</h3>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="col-md-4" style="padding-left: 100px">
+    <b>Start Date:</b>11/13/2017
+  </div>
+  <div class="col-md-4">
+    <b>End Date:</b>11/19/2017
+  </div>
+  <div class="col-md-4">
+    <button class="previous"> </button>&nbsp;
+
+      <button class="next"> </button>
+  </div>
+</div>
+<div class="row">
+  <button class="monday"></button>
+  <button class="tuesday"></button>
+  <button class="wednesday"></button>
+  <button class="thursday"></button>
+  <button class="friday"></button>
+  <button class="saturday"></button>
+  <button class="sunday"></button>
+
+</div>
+<div class="row">
+  <div class="container">
+    <form>
+      <table class="table table-bordered">
+        <thead class="bg">
+        <tr class="text-primary">
+          <th>Date</th>
+          <th style="padding-right: -10px">Task</th>
+          <th style="padding-right: 30px">Hour</th>
+          <th style=" margin-right:-10px">Task Description</th>
+          <th style="padding-right:-30px">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>
+          <label>Date:</label><hr style="margin-bottom: 10px; margin-top: 10px"><b>
+          <input type="radio"  name="days" value="workingday">Working Day<br>
+          <input type="radio"  name="days" value="Holiday">Holiday<br>
+          <input type="radio"  name="days" value="Leave">Leave<br></b></td>
+
+
+
+
+
+          <td><select id="task" name="task">
+            <option value="other">Other</option>
+            <option value="task1">Task 1</option>
+            <option value="task2">Task 2</option>
+            <option value="task3">Task 3</option></select>
+          </td>
+          <td><input type="text"  value="0.0" style="width: 30px"> </td>
+          <td><label>Task:</label><br>
+            <input type="text" name="task-text"  id="task-text" style="padding-right:-70px" ngModel style="width: 180px">
+          </td>
+
+          <td>
+        <tr>
+          <td>
+            <img src="assets/images/add_task.png"
+                 alt="addtask"
+                 style="max-height:30px; padding-left: 15px">
+          </td>
+          <td>
+            <img src="assets/images/delet_task.png"
+                 alt="delettask"
+                 style="max-height:30px; margin-top:5px; margin-left:10px; margin-right:20px"></td>
+        </tr>
+
+        </tr>
+
+
+
+
+
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <button class="submit"></button>
+</div>

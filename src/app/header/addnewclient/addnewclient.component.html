@@ -1,0 +1,278 @@
+<div class="container">
+  <div class="row">
+    <p> Please review the answers you provided below. If you need to make any adjustments, click on the answer you need
+      to update and save your changes.</p>
+  <p> Top of Form *required</p>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit(row1)" #f="ngForm" >
+      <!--form-->
+        <div id="client-data">
+          <table class="table-bordered">
+            <thead>
+            <tr>
+              <th width="570px"><b>Questions</b></th>
+              <th width="570px"><b>Answer</b></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><label>Please provide the following information about the US company What is the legal name of the
+                company?*
+              </label></td>
+              <td><input type="text"
+                         class="form-control"
+                         id = "row1"
+                         name = "row1"
+                         #row1
+                         required
+              ></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company do business under a different name (DBA)?
+              </label></td>
+              <td><input type="text" id="row2" class="form-control" name="row2" ngModel ></td>
+            </tr>
+
+            <tr>
+              <td><label>Is the company a publicly-traded business?
+              </label></td>
+              <td><input type="text" id="row3" class="form-control" name="row3" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>When was the company established?
+              </label></td>
+              <td><input type="text" id="row4" class="form-control" name="row4" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>What is the company's 9-digit Federal Employer Identification Number (FEIN)?
+              </label></td>
+              <td><input type="Number"
+                         id="row5"
+                         class="form-control"
+                         name="row5"
+                         ngModel>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label>What is the company's North America Industry Classification System (NAICS) code?
+              </label></td>
+              <td><input type="text" id="row6" class="form-control" name="row6" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company have a qualifying relationship with any offices outside the US?
+              </label></td>
+              <td><input type="text" id="row7" class="form-control" name="row7" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>What is the company's primary address in the US?
+              </label></td>
+              <td><input type="text" id="row8" class="form-control" name="row8" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>What is the company's website URL?
+              </label></td>
+              <td><input type="text" id="row9" class="form-control" name="row9" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>What type of business is the company involved in?
+              </label></td>
+              <td><input type="text" id="row10" class="form-control" name="row10" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Please provide at least 4 descriptive sentences about the company's products and services,
+                including industries and companies you serve
+              </label></td>
+              <td><input type="text" id="row11" class="form-control" name="row11" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Is the company enrolled in the government's E-Verify program?
+              </label></td>
+              <td><input type="text" id="row12" class="form-control" name="row12" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Do any of the below apply to your company?
+              </label></td>
+              <td><input type="text" id="row13" class="form-control" name="row13" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Has the company filed an H-1B, E-3, or H-1B1 previously?
+              </label></td>
+              <td><input type="text" id="row14" class="form-control" name="row14" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company have an L-1 blanket approval notice?
+              </label></td>
+              <td><input type="text" id="row15" class="form-control" name="row15" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company generate revenue?
+              </label></td>
+              <td><input type="text" id="row16" class="form-control" name="row16" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Please provide an estimate of the company's gross annual income
+              </label></td>
+              <td><input type="text" id="row17" class="form-control" name="row17" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Please provide an estimate of the company's net annual incom
+              </label></td>
+              <td><input type="text" id="row18" class="form-control" name="row18" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>How many full-time equivalent (FTE) employees does the company currently employ in the US?
+              </label></td>
+              <td><input type="text" id="row19" class="form-control" name="row19" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company have 8 or more full-time equivalent (FTE) employees in H-1B status?
+              </label></td>
+              <td><input type="text" id="row20" class="form-control" name="row20" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>full name*
+              </label></td>
+              <td><input type="text"
+                         id="row21"
+                         class="form-control"
+                         name="row21"
+                         ngModel
+                         required
+              ></td>
+            </tr>
+
+            <tr>
+              <td><label>Job title
+              </label></td>
+              <td><input type="text" id="row22" class="form-control" name="row22" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Email address*
+              </label></td>
+              <td><input type="text"
+                         id="row23"
+                         class="form-control"
+                         name="row23"
+                         ngModel
+                         required email
+              ></td>
+            </tr>
+
+            <tr>
+              <td><label>Phone number*
+              </label></td>
+              <td><input type="text"
+                         id="row24"
+                         class="form-control"
+                         name="row24"
+                         ngModel
+                         required
+              ></td>
+            </tr>
+
+            <tr>
+              <td><label>Mobile number
+              </label></td>
+              <td><input type="text" id="row25" class="form-control" name="row25" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Fax number
+              </label></td>
+              <td><input type="text" id="row26" class="form-control" name="row26" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Will this contact person be the signer?
+              </label></td>
+              <td><input type="text" id="row27" class="form-control" name="row27" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Does the company authorize the attorney of record to sign all forms and documents on behalf of the company?
+              </label></td>
+              <td><input type="text" id="row28" class="form-control" name="row28" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>full name
+              </label></td>
+              <td><input type="text"
+                         id="row29"
+                         class="form-control"
+                         name="row29"
+                         ngModel>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Job title
+              </label></td>
+              <td><input type="text" id="row30" class="form-control" name="row30" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Email address
+              </label></td>
+              <td><input type="text" id="row31" class="form-control" name="row31" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Phone number
+              </label></td>
+              <td><input type="text" id="row32" class="form-control" name="row32" ngModel></td>
+            </tr>
+
+            <tr>
+              <td><label>Mobile number
+              </label></td>
+              <td><input type="text" id="row33" class="form-control" name="row33" ngModel></td>
+            </tr>
+
+            <tr>
+            <td><label>Fax number
+            </label></td>
+            <td><input type="text" id="row34" class="form-control"name="row34" ngModel></td>
+            </tr>
+
+
+
+            </tbody>
+          </table>
+          <!--<a href="/clientprof">-->
+            <button class="btn btn-primary pull-right"
+                    type="submit"
+                    [disabled]="!f.valid"> Submit </button>
+          <!--(dataCreated)="ondataCreated($event)"-->
+          <!--formaction="(datacreated)"-->
+          <!--<button class="btn btn-primary pull-right">Submit</button>-->
+
+        </div>
+        <!--<p *ngFor="let l of data;">-->
+        <!--{{ l.row1 }}</p>-->
+      </form>
+    </div>
+
+  </div>
+</div>
