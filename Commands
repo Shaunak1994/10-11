@@ -1,0 +1,9 @@
+How to run project
+
+1. npm install (this will install the required packages)
+2. npm start or ng serve (run the project)
+
+To run on localhost:4200
+"start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
